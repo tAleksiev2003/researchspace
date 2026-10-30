@@ -1,0 +1,2 @@
+(self.webpackChunk=self.webpackChunk||[]).push([["npm.selection-is-backward"],{"./node_modules/selection-is-backward/index.js":e=>{e.exports=function isBackward(e){var o=e.anchorNode,s=e.anchorOffset,c=e.focusNode,n=e.focusOffset,a=o.compareDocumentPosition(c);return!(4===a||0===a&&s<n)}}}]);
+//# sourceMappingURL=npm.selection-is-backward-e56a4f34d1bc2c38.js.map

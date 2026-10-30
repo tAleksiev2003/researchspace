@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["default-src_main_web_components_semantic_search_index_ts"],{"./src/main/web/components/semantic/search/index.ts":(e,s,n)=>{n.d(s,{w:()=>c.w});var c=n("./src/main/web/components/semantic/search/web-components/SemanticSearchApi.ts")}}]);

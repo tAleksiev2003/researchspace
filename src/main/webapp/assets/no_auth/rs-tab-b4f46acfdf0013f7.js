@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["rs-tab"],{"./src/main/web/components/ui/tabs/Tab.tsx":(e,s,t)=>{t.r(s),t.d(s,{RsTab:()=>RsTab,default:()=>r});var a=t("./node_modules/react/index.js"),n=t("./node_modules/react-bootstrap/es/Tab.js");class RsTab extends a.Component{render(){const{title:e,eventKey:s,className:t,children:r}=this.props;return a.createElement(n.default,{title:e,eventKey:s,className:t},r)}}const r=RsTab}}]);
+//# sourceMappingURL=rs-tab-b4f46acfdf0013f7.js.map

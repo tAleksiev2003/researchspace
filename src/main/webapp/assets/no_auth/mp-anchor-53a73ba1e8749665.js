@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["mp-anchor"],{"./src/main/web/components/ui/scrollchor.ts":(c,e,o)=>{o.r(e),o.d(e,{component:()=>s,default:()=>n,factory:()=>l});var r=o("./node_modules/react/index.js");const s=o("./node_modules/react-scrollchor/lib/scrollchor.js").A,l=(0,r.createFactory)(s),n=s}}]);
+//# sourceMappingURL=mp-anchor-53a73ba1e8749665.js.map

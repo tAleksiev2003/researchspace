@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["npm.hyphenate-style-name"],{"./node_modules/hyphenate-style-name/index.js":(e,n,t)=>{t.r(n),t.d(n,{default:()=>h});var r=/[A-Z]/g,a=/^ms-/,s={};function toHyphenLower(e){return"-"+e.toLowerCase()}const h=function hyphenateStyleName(e){if(s.hasOwnProperty(e))return s[e];var n=e.replace(r,toHyphenLower);return s[e]=a.test(n)?"-"+n:n}}}]);
+//# sourceMappingURL=npm.hyphenate-style-name-b6bf6fe036de5d9f.js.map

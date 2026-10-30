@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["mp-component-toolbar-component"],{"./src/main/web/components/persistence/ComponentToolbarComponent.ts":(o,n,e)=>{e.r(n),e.d(n,{ComponentToolbarComponentComponent:()=>ComponentToolbarComponentComponent,default:()=>p});var t=e("./src/main/web/api/components/index.ts");class ComponentToolbarComponentComponent extends t.uA{constructor(o,n){super(o,n),this.state={}}render(){return null}}const p=ComponentToolbarComponentComponent}}]);
+//# sourceMappingURL=mp-component-toolbar-component-1faa5273352e3aa2.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["default-src_main_web_components_forms_static_StaticComponent_ts"],{"./src/main/web/components/forms/static/StaticComponent.ts":(t,n,s)=>{s.d(n,{M:()=>StaticComponent});var o=s("./src/main/web/api/components/index.ts"),e=s("./src/main/web/components/forms/inputs/InputCommpons.ts");class StaticComponent extends o.uA{constructor(t,n){super(t,n)}}StaticComponent.inputKind=e.PF.StaticInput}}]);
+//# sourceMappingURL=default-src_main_web_components_forms_static_StaticComponent_ts-7199ffab3acf1f78.js.map

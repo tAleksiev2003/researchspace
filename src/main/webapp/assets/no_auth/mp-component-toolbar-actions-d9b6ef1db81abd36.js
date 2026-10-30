@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["mp-component-toolbar-actions"],{"./src/main/web/components/persistence/ComponentToolbarActions.ts":(o,n,t)=>{t.r(n),t.d(n,{ComponentToolbarActionsComponent:()=>ComponentToolbarActionsComponent,default:()=>s});var e=t("./src/main/web/api/components/index.ts");class ComponentToolbarActionsComponent extends e.uA{constructor(o,n){super(o,n),this.state={}}render(){return null}}const s=ComponentToolbarActionsComponent}}]);
+//# sourceMappingURL=mp-component-toolbar-actions-d9b6ef1db81abd36.js.map

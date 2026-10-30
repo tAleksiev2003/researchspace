@@ -141,7 +141,8 @@ class PageEditorToolbarComponent extends Component<PageEditorToolbarProps, PageE
   }
 
   private renderIriCopyAction = () =>
-    createElement(
+    this.state.hasEditPermission
+        ? createElement(
       CopyToClipboard,
       {
         text: this.props.iri.value,
@@ -150,33 +151,9 @@ class PageEditorToolbarComponent extends Component<PageEditorToolbarProps, PageE
         className: 'btn btn-default component-page-toolbar__btn_copy_iri',
         title: 'Copy IRI',
       })
-    );
+    ): null;
 
   private renderExploreActions = () => [
-    createElement(
-      ResourceViewer,
-      {
-        pageIri: 'http://www.researchspace.org/resource/system/SourceStatements',
-        title: 'Statements',
-        isOpen: this.props.params['showStatements'] === 'true',
-        params: { urlqueryparamShowStatements: 'true' },
-      },
-      D.a({
-        className: 'btn btn-default component-page-toolbar__btn_show_source',
-        title: 'Show Statements',
-      })
-    ),
-    createElement(
-      ResourceViewer,
-      {
-        pageIri: 'http://www.researchspace.org/resource/system/SourceGraph',
-        title: 'Graph',
-      },
-      D.a({
-        className: 'btn btn-default component-page-toolbar__btn_show_graph',
-        title: 'Show Graph',
-      })
-    ),
     createElement(
       ResourceViewer,
       {

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["mp-panel-body"],{"./src/main/web/components/ui/panel/PanelBody.tsx":(e,n,s)=>{s.r(n),s.d(n,{PanelBody:()=>PanelBody,default:()=>l});var d=s("./node_modules/react/index.js");class PanelBody extends d.Component{render(){return d.Children.only(this.props.children)}}const l=PanelBody}}]);
+//# sourceMappingURL=mp-panel-body-0ca66983ddd2006d.js.map

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["default-src_main_web_data_vocabularies_index_ts"],{"./src/main/web/data/vocabularies/index.ts":(a,e,s)=>{s.d(e,{Hv:()=>c.Hv,M_:()=>c.M_,X_:()=>c.X_,nS:()=>c.nS});var c=s("./src/main/web/data/vocabularies/vocabularies.ts")}}]);

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["default-src_main_web_components_ui_tabs_TabEvents_ts"],{"./src/main/web/components/ui/tabs/TabEvents.ts":(e,s,t)=>{t.d(s,{B:()=>n});const n=(0,t("./src/main/web/api/events/index.ts").RA)("Tab.Selected")}}]);
+//# sourceMappingURL=default-src_main_web_components_ui_tabs_TabEvents_ts-62d42a70a44f2e8f.js.map

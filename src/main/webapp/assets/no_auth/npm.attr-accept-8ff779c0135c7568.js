@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["npm.attr-accept"],{"./node_modules/attr-accept/dist/es/index.js":(e,t)=>{t.A=function(e,t){if(e&&t){var r=Array.isArray(t)?t:t.split(","),a=e.name||"",s=e.type||"",n=s.replace(/\/.*$/,"");return r.some((function(e){var t=e.trim();return"."===t.charAt(0)?a.toLowerCase().endsWith(t.toLowerCase()):t.endsWith("/*")?n===t.replace(/\/.*$/,""):s===t}))}return!0}}}]);
+//# sourceMappingURL=npm.attr-accept-8ff779c0135c7568.js.map

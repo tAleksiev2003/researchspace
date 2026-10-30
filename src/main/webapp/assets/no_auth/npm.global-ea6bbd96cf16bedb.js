@@ -1,0 +1,2 @@
+(self.webpackChunk=self.webpackChunk||[]).push([["npm.global"],{"./node_modules/global/window.js":(e,n,o)=>{var d;d="undefined"!=typeof window?window:void 0!==o.g?o.g:"undefined"!=typeof self?self:{},e.exports=d}}]);
+//# sourceMappingURL=npm.global-ea6bbd96cf16bedb.js.map

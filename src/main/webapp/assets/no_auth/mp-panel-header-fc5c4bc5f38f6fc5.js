@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["mp-panel-header"],{"./src/main/web/components/ui/panel/PanelHeader.tsx":(e,n,a)=>{a.r(n),a.d(n,{PanelHeader:()=>PanelHeader,default:()=>s});var r=a("./node_modules/react/index.js");class PanelHeader extends r.Component{render(){return r.Children.only(this.props.children)}}const s=PanelHeader}}]);
+//# sourceMappingURL=mp-panel-header-fc5c4bc5f38f6fc5.js.map

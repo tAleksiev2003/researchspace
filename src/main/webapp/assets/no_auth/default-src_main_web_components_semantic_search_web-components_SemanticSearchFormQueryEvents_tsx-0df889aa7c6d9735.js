@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["default-src_main_web_components_semantic_search_web-components_SemanticSearchFormQueryEvents_tsx"],{"./src/main/web/components/semantic/search/web-components/SemanticSearchFormQueryEvents.tsx":(e,n,s)=>{s.d(n,{u:()=>c});const c=(0,s("./src/main/web/api/events/index.ts").RA)("SemanticSearchFormQuery.Executed")}}]);
+//# sourceMappingURL=default-src_main_web_components_semantic_search_web-components_SemanticSearchFormQueryEvents_tsx-0df889aa7c6d9735.js.map

@@ -1,0 +1,2 @@
+(self.webpackChunk=self.webpackChunk||[]).push([["npm.rafl"],{"./node_modules/rafl/index.js":(e,n,a)=>{var i=a("./node_modules/global/window.js"),t=i.requestAnimationFrame||i.webkitRequestAnimationFrame||i.mozRequestAnimationFrame||function fallback(e){var n=+new Date,a=Math.max(0,16-(n-o)),i=setTimeout(e,a);return o=n,i},o=+new Date;var m=i.cancelAnimationFrame||i.webkitCancelAnimationFrame||i.mozCancelAnimationFrame||clearTimeout;Function.prototype.bind&&(t=t.bind(i),m=m.bind(i)),(e.exports=t).cancel=m}}]);
+//# sourceMappingURL=npm.rafl-c437ad8e6bcb8b30.js.map

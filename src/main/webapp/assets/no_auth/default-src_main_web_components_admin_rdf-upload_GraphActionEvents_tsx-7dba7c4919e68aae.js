@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["default-src_main_web_components_admin_rdf-upload_GraphActionEvents_tsx"],{"./src/main/web/components/admin/rdf-upload/GraphActionEvents.tsx":(e,n,s)=>{s.d(n,{gG:()=>c,i4:()=>a});const t=s("./src/main/web/api/events/index.ts").RA,a=t("GraphAction.Success"),c=t("GraphAction.Delete");t("GraphAction.Update")}}]);
+//# sourceMappingURL=default-src_main_web_components_admin_rdf-upload_GraphActionEvents_tsx-7dba7c4919e68aae.js.map

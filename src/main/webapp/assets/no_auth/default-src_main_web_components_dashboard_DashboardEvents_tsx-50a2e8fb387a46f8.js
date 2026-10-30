@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["default-src_main_web_components_dashboard_DashboardEvents_tsx"],{"./src/main/web/components/dashboard/DashboardEvents.tsx":(a,s,e)=>{e.d(s,{TN:()=>h,f7:()=>r,fA:()=>n,lH:()=>t});var d=e("./src/main/web/api/events/index.ts");const n="Dashboard.AddFrame",o=d.RA,r=o("Dashboard.StatusChanged"),t=o("Dashboard.ResourceChanged"),h=o("Dashboard.LayoutChanged")}}]);
+//# sourceMappingURL=default-src_main_web_components_dashboard_DashboardEvents_tsx-50a2e8fb387a46f8.js.map

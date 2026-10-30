@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["mp-resource-thumbnail-fallback"],{"./src/main/web/components/ui/thumbnail/NoResourceThumbnail.ts":(e,n,s)=>{s.r(n),s.d(n,{NoResourceThumbnail:()=>NoResourceThumbnail,default:()=>o});var u=s("./node_modules/react/index.js");class NoResourceThumbnail extends u.Component{render(){return u.Children.only(this.props.children)}}const o=NoResourceThumbnail}}]);
+//# sourceMappingURL=mp-resource-thumbnail-fallback-9f92b8ba9421cd45.js.map

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["default-src_main_web_components_ldp_index_ts"],{"./src/main/web/components/ldp/index.ts":(e,s,n)=>{n.d(s,{d:()=>c.d});var c=n("./src/main/web/components/ldp/CreateResourceDialog.ts")}}]);

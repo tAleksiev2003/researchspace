@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["npm.mitt"],{"./node_modules/mitt/dist/mitt.es.js":(t,n,e)=>{e.r(n),e.d(n,{default:()=>i});const i=function mitt(t){return t=t||Object.create(null),{on:function on(n,e){(t[n]||(t[n]=[])).push(e)},off:function off(n,e){t[n]&&t[n].splice(t[n].indexOf(e)>>>0,1)},emit:function emit(n,e){(t[n]||[]).slice().map((function(t){t(e)})),(t["*"]||[]).slice().map((function(t){t(n,e)}))}}}}}]);
+//# sourceMappingURL=npm.mitt-d370797245b42a07.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["npm.is-plain-object"],{"./node_modules/is-plain-object/index.js":(t,e,o)=>{var c=o("./node_modules/isobject/index.js");function isObjectObject(t){return!0===c(t)&&"[object Object]"===Object.prototype.toString.call(t)}t.exports=function isPlainObject(t){var e,o;return!1!==isObjectObject(t)&&("function"==typeof(e=t.constructor)&&(!1!==isObjectObject(o=e.prototype)&&!1!==o.hasOwnProperty("isPrototypeOf")))}}}]);
+//# sourceMappingURL=npm.is-plain-object-c4e6a28a2e797b63.js.map

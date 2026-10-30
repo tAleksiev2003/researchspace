@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["ontodia-nested-nodes"],{"./src/main/web/components/3-rd-party/ontodia/OntodiaNestedNodes.tsx":(e,d,s)=>{s.r(d),s.d(d,{OntodiaNestedNodes:()=>OntodiaNestedNodes,default:()=>n});var t=s("./node_modules/react/index.js");class OntodiaNestedNodes extends t.Component{render(){return null}}const n=OntodiaNestedNodes}}]);
+//# sourceMappingURL=ontodia-nested-nodes-96b3553895eb29af.js.map

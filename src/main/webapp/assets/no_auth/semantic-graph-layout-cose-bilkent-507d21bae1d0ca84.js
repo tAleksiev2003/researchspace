@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["semantic-graph-layout-cose-bilkent"],{"./src/main/web/components/semantic/graph/layouts/CoseBilkentLayout.ts":(e,s,t)=>{t.r(s),t.d(s,{CoseBilkentLayout:()=>a,default:()=>c});var n=t("./node_modules/cytoscape-cose-bilkent/src/index.js");const a=(0,t("./src/main/web/components/semantic/graph/api/Api.ts").ZP)("cose-bilkent",(e=>n(e))),c=a}}]);
+//# sourceMappingURL=semantic-graph-layout-cose-bilkent-507d21bae1d0ca84.js.map

@@ -27,7 +27,7 @@
 .page-container {
 
   display: flex;
-  height: calc(100vh - #{$nav-height});
+  flex: 1;
 }
 
 .pageSidebar-container {

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["npm.direction"],{"./node_modules/direction/index.js":e=>{var t,n,r,i;t="A-Za-zÀ-ÖØ-öø-ʸ̀-֐ࠀ-῿‎Ⰰ-﬜︀-﹯﻽-￿",n="֑-߿יִ-﷽ﹰ-ﻼ",r=new RegExp("^[^"+n+"]*["+t+"]"),i=new RegExp("^[^"+t+"]*["+n+"]"),e.exports=function direction(e){return e=e.toString(),i.test(e)?"rtl":r.test(e)?"ltr":"neutral"}}}]);
+//# sourceMappingURL=npm.direction-291bd03a562fd92a.js.map

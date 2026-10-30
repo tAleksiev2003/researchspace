@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["mp-panel-footer"],{"./src/main/web/components/ui/panel/PanelFooter.tsx":(e,n,o)=>{o.r(n),o.d(n,{PanelFooter:()=>PanelFooter,default:()=>t});var r=o("./node_modules/react/index.js");class PanelFooter extends r.Component{render(){return r.Children.only(this.props.children)}}const t=PanelFooter}}]);
+//# sourceMappingURL=mp-panel-footer-7ecb290b9051ba81.js.map

@@ -1,0 +1,2 @@
+(self.webpackChunk=self.webpackChunk||[]).push([["npm.domelementtype"],{"./node_modules/domelementtype/index.js":e=>{e.exports={Text:"text",Directive:"directive",Comment:"comment",Script:"script",Style:"style",Tag:"tag",CDATA:"cdata",Doctype:"doctype",isTag:function(e){return"tag"===e.type||"script"===e.type||"style"===e.type}}}}]);
+//# sourceMappingURL=npm.domelementtype-70616a30a817e1fe.js.map

@@ -1,0 +1,2 @@
+(self.webpackChunk=self.webpackChunk||[]).push([["npm.can-use-dom"],{"./node_modules/can-use-dom/index.js":e=>{var n=!("undefined"==typeof window||!window.document||!window.document.createElement);e.exports=n}}]);
+//# sourceMappingURL=npm.can-use-dom-2fcedb5ca4488968.js.map

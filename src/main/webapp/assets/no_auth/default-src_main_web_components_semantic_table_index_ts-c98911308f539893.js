@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["default-src_main_web_components_semantic_table_index_ts"],{"./src/main/web/components/semantic/table/index.ts":(e,n,a)=>{a.d(n,{X:()=>t.XI,f:()=>s.SemanticTable});var s=a("./src/main/web/components/semantic/table/SemanticTable.ts"),t=a("./src/main/web/components/semantic/table/Table.ts")}}]);

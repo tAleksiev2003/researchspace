@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["default-src_main_web_components_sets_SetManagementApi_ts"],{"./src/main/web/components/sets/SetManagementApi.ts":(e,s,n)=>{n.d(s,{YD:()=>m,_r:()=>p,nF:()=>u});var t=n("./node_modules/prop-types/index.js");const a="mp-set-management",m={[a]:t.any.isRequired},i="mp-set-management--set-view",p={[i]:t.any.isRequired},r="mp-set-management--set-item-view",u={[r]:t.any.isRequired}}}]);
+//# sourceMappingURL=default-src_main_web_components_sets_SetManagementApi_ts-cd2ae775e71a9e39.js.map
