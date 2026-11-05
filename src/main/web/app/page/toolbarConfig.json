@@ -1,0 +1,16 @@
+{
+  "enabled": {
+    "editPage": 1,
+    "copyIri": 0,
+    "showStatements": 0,
+    "showGraph": 0,
+    "showDiagram": 1
+  },
+  "requiresAdmin": {
+    "editPage": 1,
+    "copyIri": 1,
+    "showStatements": 0,
+    "showGraph": 0,
+    "showDiagram": 0
+  }
+}

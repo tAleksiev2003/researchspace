@@ -44,3 +44,5 @@ src/main/webapp/assets/bundles-manifest.json
 
 # Local secrets - DO NOT COMMIT
 gradle-local.properties
+
+src/main/webapp/assets/

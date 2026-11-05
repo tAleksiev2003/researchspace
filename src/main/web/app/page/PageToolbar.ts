@@ -32,8 +32,23 @@ import { Cancellation } from 'platform/api/async';
 import { Action } from 'platform/components/utils';
 import { ResourceViewer } from './ResourceViewer';
 
+import * as toolbarConfig from './toolbarConfig.json';
+
 const ButtonGroup = createFactory(ReactBootstrap.ButtonGroup);
 const ButtonToolbar = createFactory(ReactBootstrap.ButtonToolbar);
+
+/**
+ * Button identifiers used as keys into the two configuration dictionaries below.
+ */
+
+
+/**
+ * Dictionary: does this button require admin/edit privileges to be shown?
+ * 1 = requires admin privileges, 0 = does not require admin privileges.
+ */
+type ToolbarConfigKeys = 'editPage' | 'copyIri' | 'showStatements' | 'showGraph' | 'showDiagram';
+const BUTTON_ENABLED: { [key in ToolbarConfigKeys]: number } = toolbarConfig.enabled;
+const BUTTON_REQUIRES_ADMIN: { [key in ToolbarConfigKeys]: number } = toolbarConfig.requiresAdmin;
 
 interface PageEditorToolbarProps {
   iri: Rdf.Iri;
@@ -112,13 +127,27 @@ class PageEditorToolbarComponent extends Component<PageEditorToolbarProps, PageE
       context: this.context.semanticContext,
     }).map((res) => !SparqlUtil.isSelectResultEmpty(res));
 
+  /**
+   * Consults BUTTON_ENABLED and BUTTON_REQUIRES_ADMIN to decide whether a given
+   * button should actually be rendered for the current user.
+   */
+  private isButtonVisible = (buttonId: ToolbarConfigKeys): boolean => {
+    if (!BUTTON_ENABLED[buttonId]) {
+      return false;
+    }
+    if (BUTTON_REQUIRES_ADMIN[buttonId] && !this.state.hasEditPermission) {
+      return false;
+    }
+    return true;
+  };
+
   public render() {
     return ButtonToolbar(
       { className: 'component-page-toolbar hidden-print' },
       ButtonGroup(
         {},
         this.showAssetsRepositoryIndicator(),
-        this.state.hasEditPermission
+        this.isButtonVisible('editPage')
           ? createElement(
               ResourceLink,
               {
@@ -128,8 +157,8 @@ class PageEditorToolbarComponent extends Component<PageEditorToolbarProps, PageE
                 title: 'Edit Page',
                 action: ResourceLinkAction.edit,
               },
-              D.div({}, 
-                D.i({className:'fa fa-pencil'}),
+              D.div({},
+                D.i({ className: 'fa fa-pencil' }),
                 D.span({}, ' Edit Page')
               )
             )
@@ -141,53 +170,61 @@ class PageEditorToolbarComponent extends Component<PageEditorToolbarProps, PageE
   }
 
   private renderIriCopyAction = () =>
-    createElement(
-      CopyToClipboard,
-      {
-        text: this.props.iri.value,
-      },
-      D.a({
-        className: 'btn btn-default component-page-toolbar__btn_copy_iri',
-        title: 'Copy IRI',
-      })
-    );
+    this.isButtonVisible('copyIri')
+      ? createElement(
+          CopyToClipboard,
+          {
+            text: this.props.iri.value,
+          },
+          D.a({
+            className: 'btn btn-default component-page-toolbar__btn_copy_iri',
+            title: 'Copy IRI',
+          })
+        )
+      : null;
 
   private renderExploreActions = () => [
-    createElement(
-      ResourceViewer,
-      {
-        pageIri: 'http://www.researchspace.org/resource/system/SourceStatements',
-        title: 'Statements',
-        isOpen: this.props.params['showStatements'] === 'true',
-        params: { urlqueryparamShowStatements: 'true' },
-      },
-      D.a({
-        className: 'btn btn-default component-page-toolbar__btn_show_source',
-        title: 'Show Statements',
-      })
-    ),
-    createElement(
-      ResourceViewer,
-      {
-        pageIri: 'http://www.researchspace.org/resource/system/SourceGraph',
-        title: 'Graph',
-      },
-      D.a({
-        className: 'btn btn-default component-page-toolbar__btn_show_graph',
-        title: 'Show Graph',
-      })
-    ),
-    createElement(
-      ResourceViewer,
-      {
-        pageIri: 'http://www.researchspace.org/resource/system/SourceDiagram',
-        title: 'Diagram',
-      },
-      D.a({
-        className: 'btn btn-default component-page-toolbar__btn_show_diagram',
-        title: 'Show Diagram',
-      })
-    ),
+    this.isButtonVisible('showStatements')
+      ? createElement(
+          ResourceViewer,
+          {
+            pageIri: 'http://www.researchspace.org/resource/system/SourceStatements',
+            title: 'Statements',
+            isOpen: this.props.params['showStatements'] === 'true',
+            params: { urlqueryparamShowStatements: 'true' },
+          },
+          D.a({
+            className: 'btn btn-default component-page-toolbar__btn_show_source',
+            title: 'Show Statements',
+          })
+        )
+      : null,
+    this.isButtonVisible('showGraph')
+      ? createElement(
+          ResourceViewer,
+          {
+            pageIri: 'http://www.researchspace.org/resource/system/SourceGraph',
+            title: 'Graph',
+          },
+          D.a({
+            className: 'btn btn-default component-page-toolbar__btn_show_graph',
+            title: 'Show Graph',
+          })
+        )
+      : null,
+    this.isButtonVisible('showDiagram')
+      ? createElement(
+          ResourceViewer,
+          {
+            pageIri: 'http://www.researchspace.org/resource/system/SourceDiagram',
+            title: 'Diagram',
+          },
+          D.a({
+            className: 'btn btn-default component-page-toolbar__btn_show_diagram',
+            title: 'Show Diagram',
+          })
+        )
+      : null,
   ];
 
   /**

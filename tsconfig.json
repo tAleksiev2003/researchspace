@@ -27,6 +27,7 @@
     "jsx": "react",
     "skipLibCheck": true,
     "sourceMap": true,
+    "resolveJsonModule": true,
     "plugins": [
       {
         "name": "typescript-eslint-language-service"
